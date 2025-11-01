@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mayank Saree Center</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* ✅ Navbar */
+    .navbar {
+        background: white;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 22px;
+        color: #d81b60 !important;
+    }
+
+    .nav-link {
+        font-weight: 500;
+        margin-left: 10px;
+    }
+
+    /* ✅ Hero Section */
+    .hero {
+        height: 80vh;
+        background: url("banner.jpg") center/cover no-repeat;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.45);
+    }
+
+    .hero-content {
+        position: relative;
+        z-index: 5;
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 55px;
+        font-weight: 700;
+        text-shadow: 0px 5px 15px rgba(0,0,0,0.8);
+        animation: fadeDown 1.2s ease-in-out;
+    }
+
+    .hero p {
+        font-size: 20px;
+        margin-top: 10px;
+        animation: fadeUp 1.2s ease-in-out;
+    }
+
+    .shop-btn {
+        margin-top: 20px;
+        background: #ff2d88;
+        padding: 12px 28px;
+        border-radius: 30px;
+        color: white;
+        font-weight: 600;
+        box-shadow: 0px 6px 15px rgba(255,50,120,0.5);
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .shop-btn:hover {
+        background: #d81b60;
+        color: white;
+        transform: scale(1.08);
+        box-shadow: 0px 8px 22px rgba(255,50,120,0.7);
+    }
+
+    @keyframes fadeDown {
+        from { opacity: 0; transform: translateY(-30px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ✅ Section Title */
+    .section-title {
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        margin: 50px 0 20px;
+        color: #d81b60;
+    }
+
+    /* ✅ Stylish Saree Cards */
+    .saree-card {
+        border-radius: 12px;
+        overflow: hidden;
+        transition: 0.3s;
+        background: white;
+        box-shadow: 0px 4px 18px rgba(0,0,0,0.1);
+    }
+
+    .saree-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+        transition: 0.4s;
+    }
+
+    .saree-card:hover img {
+        transform: scale(1.08);
+        opacity: 0.85;
+    }
+
+    .saree-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 8px 28px rgba(0,0,0,0.2);
+    }
+
+    .saree-card h5 {
+        padding: 14px;
+        text-align: center;
+        font-weight: 600;
+        color: #333;
+    }
+
+</style>
+</head>
+
+<body>
+
+<!-- ✅ NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+        <i class="fa-solid fa-street-view"></i> Mayank Saree Center
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-3">
+         <li class="nav-item"><a class="nav-link" href="About.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallerym.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contactus.html">Contact</a></li>
+      </ul>
+
+     <div class="ms-auto d-flex align-items-center gap-3">
+      <i class="fa-solid fa-user" style="font-size:25px;"></i>
+     <a href="login.html"> <button class="btn btn-outline-success btn-sm">Login</button></a>
+    </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ HERO SECTION -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Beautiful Sarees for Every Occasion</h1>
+        <p>Explore our premium collection of Silk, Banarasi, Wedding & Designer Sarees.</p>
+        <a href="gallerym.html" class="shop-btn">Explore Collection</a>
+    </div>
+</div>
+
+<!-- ✅ FEATURED SAREES -->
+<h2 class="section-title">Featured Sarees</h2>
+
+<div class="container mb-5">
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="saree-card">
+        <img src="gout1.jpeg" alt="">
+        <h5>Premium Silk Saree</h5>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="saree-card">
+        <img src="gout2.jpeg" alt="">
+        <h5>Designer Wedding Saree</h5>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="saree-card">
+        <img src="gout3.jpeg" alt="">
+        <h5>Banarasi Traditional Saree</h5>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ✅ Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
